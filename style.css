@@ -1,0 +1,30 @@
+body{
+    background: teal;
+    display: flex;
+    height: 100vh;
+}
+
+img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#carton{
+    position: relative;
+    top: 200px;
+    left: 500px;
+    height: 500px;
+    width: 500px;
+}
+
+.tenu {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
