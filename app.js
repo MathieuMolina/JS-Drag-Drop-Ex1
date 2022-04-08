@@ -1,7 +1,47 @@
-const base = document.getElementById("base");
+const crayon = document.getElementById("crayon");
+const gomme = document.getElementById("gomme");
+const stylo = document.getElementById("stylo");
+const compas = document.getElementById("compas");
+const rapporteur = document.getElementById("rapporteur");
+
 const box = document.querySelectorAll(".case");
-let carton = document.getElementById("carton");
+const carton = document.getElementById("carton");
+let reset = document.getElementById('reset')
 let item;
+
+
+
+
+
+//COMPTEUR
+
+let score = 0;
+
+let compteur = document.getElementById('compteur');
+
+let elt = document.getElementById("compteur");
+
+function addscore(){
+    score++;
+}
+
+function showscore(){
+    elt.textContent="Le score est de : " +score+" / "+ nombre.length;
+}
+
+
+let nombre = [crayon, gomme, stylo, compas, rapporteur]
+for (let i=0; i < nombre.length; i++) {
+    nombre[i].addEventListener("click" , function master(){
+        addscore();
+        showscore();
+    });
+}
+
+
+//FIN COMPTEUR
+
+
 
 document.addEventListener("dragstart", function(e){
     console.log("cible:",e.target);
@@ -17,7 +57,7 @@ function dragStart(param) {
 }
 
 function dragEnd(param) {
-    param.className = 'base';
+    param.className = 'crayon';
 }
 
 for (const vide of box) {
@@ -52,4 +92,15 @@ function dragDrop(e) {
     carton.className = 'case';
     console.log(e);
     carton.append(e);
+    addscore();
+    showscore();
 }
+
+// RESET
+document.getElementById('reset').addEventListener("click", function reset(){
+    score = 0;
+    document.getElementById("compteur").innerText = " Le score est de : 0 / 5"
+    
+});
+// RESET FIN
+

@@ -4,6 +4,19 @@ body{
     height: 100vh;
 }
 
+h2{
+    text-align: center;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-family: 'Kelly Slab', cursive;
+}
+
+#reset{
+    height: 50px;
+    width: 50px;
+}
+
 img{
     position: relative;
     height: 150px;

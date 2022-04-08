@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drag&Drop carton</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
+    <h2 id="compteur">Le score est de : 0 / 5</h2>
+    <button id="reset" >Reset</button>
+    <img src="./images/Carton.png" id="carton" draggable="false" class="case">
 
-    <div><img src="./images/Carton.png" id="carton" draggable="false" class="case"></div>
-
-    <div id="base" draggable="true" class="case"><img src="./images/crayon.png"></div>
-    <div id="gomme" draggable="true" class="case"><img src="./images/gomme.png"></div>
-    <div id="stylo" draggable="true" class="case"><img src="./images/stylo.png"></div>
-    <div id="compas" draggable="true" class="case"><img src="./images/compas.png"></div>
-    <div id="rapporteur" draggable="true" class="case"><img src="./images/rapporteur.png"></div>
+    <img id="crayon" draggable="true" class="case" src="./images/crayon.png">
+    <img  id="gomme" draggable="true" class="case"src="./images/gomme.png">
+    <img id="stylo" draggable="true" class="case" src="./images/stylo.png">
+    <img id="compas" draggable="true" class="case" src="./images/compas.png">
+    <img id="rapporteur" draggable="true" class="case" src="./images/rapporteur.png">
 
 
     <script src="./app.js" type="text/javascript"></script>
