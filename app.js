@@ -9,8 +9,8 @@ const carton = document.getElementById("carton");
 let reset = document.getElementById('reset')
 let item;
 
-
-
+let container = document.getElementById("game1");  
+let content = container.innerHTML;
 
 
 //COMPTEUR
@@ -100,7 +100,8 @@ function dragDrop(e) {
 document.getElementById('reset').addEventListener("click", function reset(){
     score = 0;
     document.getElementById("compteur").innerText = " Le score est de : 0 / 5"
-    
+    container.innerHTML= content;
 });
+
 // RESET FIN
 
